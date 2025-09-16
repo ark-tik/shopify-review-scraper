@@ -1,0 +1,15 @@
+{
+  "name": "shopify-review-scraper",
+  "version": "1.0.0",
+  "description": "Scrapes Shopify app reviews and exports to CSV",
+  "main": "shopify-review-scraper.js",
+  "scripts": {
+    "start": "node shopify-review-scraper.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  },
+  "keywords": ["shopify", "scraper", "reviews", "csv"],
+  "author": "",
+  "license": "MIT"
+}
