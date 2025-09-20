@@ -89,6 +89,27 @@ The scraper generates a CSV file containing the scraped review data with relevan
 - Review dates
 - Other metadata
 
+## JSON to CSV Converter
+
+A utility script is included to convert JSON output files to CSV format:
+
+### Usage
+
+```bash
+# Convert JSON to CSV (auto-generates CSV filename)
+node json-to-csv.js shopify-reviews-2025-09-20-123456.json
+
+# Convert JSON to CSV with custom output filename
+node json-to-csv.js input.json output.csv
+```
+
+### Features
+
+- Automatically extracts headers from the first JSON object
+- Handles CSV escaping (quotes, commas, newlines)
+- Preserves all data fields from the JSON
+- Can be used as a standalone utility or imported as a module
+
 ## Dependencies
 
 - **puppeteer**: ^21.0.0 - For web scraping and browser automation
